@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item> 
+          <ion-label floating>user</ion-label> 
+          <ion-input type="text" [(ngModel)]="user.username"></ion-input>
+          
+    </ion-item>
+    <ion-item> 
+          <ion-label floating>password</ion-label> 
+          <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+          
+    </ion-item>
+    <ion-item> 
+          <ion-label floating>nombre</ion-label> 
+          <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+    <ion-item> 
+          <ion-label floating>email</ion-label> 
+          <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div>
+    <button ion-button primary block (click)='saveUser()'>save</button>
+  </div>
+</ion-content>
